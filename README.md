@@ -21,3 +21,7 @@ learn a little bit of backend and to keep the project as simple and usefull as p
 ## Main Collaborators of the project
 
 - [@Yassett Ynfante](https://github.com/YnfanteY2799) -> (So far)
+
+### Note
+
+Each change made for config purposes on this project cant be made as single commits
