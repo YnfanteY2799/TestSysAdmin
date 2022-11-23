@@ -15,7 +15,7 @@ This project will be made using as it's core :
 ## Main goal of this test will be
 
 Learn Js and react, make something really usefull for a healty learning path in programming (Stating web sided),
-learn a little bit of backend and to keep the project as simple and usefull as possible 
+learn a little bit of backend and to keep the project as simple and usefull as possible
 **********USE OF HEAVY LIBS IS PROHIBITED, if there's need for them please contact with the person who gave you this test**********
 
 ## Main Collaborators of the project
