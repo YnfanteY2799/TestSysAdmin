@@ -1,6 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
-import Navbar from "../components/Navbar/Navbar.jsx";
+import { Navbar } from "../components/index.js";
 
 export default function Home() {
   return <Navbar />;

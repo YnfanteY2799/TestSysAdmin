@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 export default function Navbar({ fixed }) {
+
+  
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
