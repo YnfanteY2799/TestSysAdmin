@@ -1,65 +1,31 @@
-import { useState } from "react";
-
-export default function Navbar({ fixed }) {
-
-  
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
+export default function Navbar() {
   return (
-    <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 mb-3 bg-pink-500">
-      <div className="container flex flex-wrap items-center justify-between px-4 mx-auto">
-        <div className="relative flex justify-between w-full lg:w-auto lg:static lg:block lg:justify-start">
-          <a
-            className="inline-block py-2 mr-4 text-sm font-bold leading-relaxed text-white uppercase whitespace-nowrap"
-            href="#pablo"
-          >
-            pink Tailwind Starter Kit
-          </a>
-          <button
-            className="block px-3 py-1 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
-            type="button"
-            onClick={() => setNavbarOpen(!navbarOpen)}
-          >
-            <i className="fas fa-bars"></i>
-          </button>
+    <main class="flex-1 pl-96">
+      <nav class="flex border-b-[1px] p-6">
+        <div class="right flex w-full gap-5">
+          <span class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </span>
+          <input
+            type="text"
+            class="w-[500px] placeholder-gray-700 outline-none"
+            placeholder="Search..."
+          />
         </div>
-        <div
-          className={
-            "lg:flex flex-grow items-center" + (navbarOpen ? " flex" : " hidden")
-          }
-          id="example-navbar-danger"
-        >
-          <ul className="flex flex-col list-none lg:flex-row lg:ml-auto">
-            <li className="nav-item">
-              <a
-                className="flex items-center px-3 py-2 text-xs font-bold leading-snug text-white uppercase hover:opacity-75"
-                href="#pablo"
-              >
-                <i className="text-lg text-white opacity-75 fab fa-facebook-square leading-lg"></i>
-                <span className="ml-2">Share</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="flex items-center px-3 py-2 text-xs font-bold leading-snug text-white uppercase hover:opacity-75"
-                href="#pablo"
-              >
-                <i className="text-lg text-white opacity-75 fab fa-twitter leading-lg"></i>
-                <span className="ml-2">Tweet</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="flex items-center px-3 py-2 text-xs font-bold leading-snug text-white uppercase hover:opacity-75"
-                href="#pablo"
-              >
-                <i className="text-lg text-white opacity-75 fab fa-pinterest leading-lg"></i>
-                <span className="ml-2">Pin</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </main>
   );
 }
